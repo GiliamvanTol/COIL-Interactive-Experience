@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+		body{
+			overflow-y: hidden;
+			font-family: "helvetica";
+		}
+		#container{
+			margin: 100px auto;
+			width: 800px;
+			height: 500px;
+		}
+		#robot{
+			margin-top: 80px;
+			float: left;
+		}
+		#display{
+			width: 550px;
+			height: 200px;
+			background-color: #F39878;
+			border: 2px #EA6648 solid;
+			margin-top: ;
+			float: left;
+			border-radius: 30px;
+			text-align: center;
+			line-height: 150px;
+			font-size: 20px;
+		}
+		#box{
+			width: 200px;
+			height: 100px;
+			float: left;
+			margin-top: -100px;
+			margin-left: 300px;
+		}
+		.btn-true{
+			height: 50px;
+			width: 50px;
+			background-color: #9DE981;
+			border-radius: 100px;
+			border:2px #7EC87C solid ;
+			float: left;
+			line-height: 50px;
+			text-align: center;
+			margin: 250px 10px;
+			margin-left:-190px;
+
+		}
+		.btn-true:hover{
+			background-color: #3F6B3E;
+			color: white;
+			border:2px solid #9DE981 ;
+		}
+
+	.btn-false{
+			height: 50px;
+			width: 50px;
+			background-color: #E98181;
+			border-radius: 100px;
+			border:2px #C33333 solid ;
+			float: left;
+			line-height: 50px;
+			text-align: center;
+			margin: 250px 10px;
+			margin-left: -120px;
+
+		}
+		.btn-false:hover{
+			background-color: #3F6B3E;
+			color: white;
+			border:2px solid #9DE981 ;
+		}
+	.btn-skip{
+			height: 50px;
+			width: 50px;
+			background-color: #E2C1B6;
+			border-radius: 100px;
+			border:2px #D6A89E solid ;
+			float: left;
+			line-height: 50px;
+			text-align: center;
+			margin: 250px 10px;
+			margin-left: -50px;
+
+		}
+		.btn-skip:hover{
+			background-color: #D6A89E;
+			color: white;
+			border:2px solid #E2C1B6 ;
+		}
+		#next{
+			
+		}
+
+		#countdown{
+			  font-family: "Rubik Mono One", monospace;
+ 			  font-weight: 400;
+ 			  color: #C33333;
+ 			  font-size: 20px;
+		}
+		#clickCount{
+			  font-family: "Rubik Mono One", monospace;
+  			  font-weight: 400;
+  			  font-size: 20px;
+		}

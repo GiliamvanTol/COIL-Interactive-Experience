@@ -1,0 +1,15 @@
+old.addEventListener("click", () => {
+    old.classList.add("distort")
+    setTimeout(function() {
+        old.classList.remove('distort');
+      }, 750);
+});
+
+.distort {
+    animation: distortcar 0.75s linear;
+}
+
+@keyframes distortcar {
+    0%, 50%, 100% {transform: scale(1, 1);}
+    25%, 75% {transform: scale(0.8, 1.5);}
+}

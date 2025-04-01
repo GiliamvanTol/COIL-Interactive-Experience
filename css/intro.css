@@ -1,0 +1,60 @@
+
+	
+		.container{
+			display: flex;
+            margin: 100px auto;
+            width: 800px;
+            height: 500px;
+		}
+
+        .text-boxes {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+		#display{
+			width: 300px;
+			height: 150px;
+			background-color: #F39878;
+			border: 2px #EA6648 solid;
+			border-radius: 30px;
+			text-align: center;
+			line-height: 150px;
+			font-size: 22px;
+
+            font-family: Inter; 
+            font-size: 25px;
+            font-weight: normal;
+            color: #482921;
+
+            margin-bottom: 15rem;
+		}
+
+	
+        .ok {
+            background-color: #9DE981;
+            border: 2px solid #7EC87C;
+            color: #3F6B3E;
+            text-align: center; 
+            height: 5rem;
+            width: 5rem;
+            border-radius: 100px; 
+           
+            display: flex; 
+            justify-content: center; 
+            align-items: center;  
+            
+            text-decoration: none !important;
+        }
+
+		#btn:hover{
+			background-color: #3F6B3E;
+			color: #9DE981;
+			border:2px #7EC87C  ;
+		}
+
+        .coilrobot {
+            height: 40rem;
+            width: auto;
+        }

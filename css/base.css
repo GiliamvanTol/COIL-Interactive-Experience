@@ -1,47 +1,92 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
-		body{
-			overflow-y: hidden;
-			font-family: "helvetica";
-		}
-		#container{
-			margin: 100px auto;
-			width: 800px;
-			height: 500px;
-		}
-		#robot{
-			margin-top: 80px;
-			float: left;
-		}
-		#display{
-			width: 550px;
-			height: 200px;
-			background-color: #F39878;
-			border: 2px #EA6648 solid;
-			margin-top: ;
-			float: left;
-			border-radius: 30px;
-			text-align: center;
-			line-height: 150px;
-			font-size: 20px;
-		}
-		#box{
-			width: 200px;
-			height: 100px;
-			float: left;
-			margin-top: -100px;
-			margin-left: 300px;
-		}
+		
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+	overflow-y: hidden;
+}
+
+
+.text-boxes {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#display{
+	width: 300px;
+	height: 150px;
+	background-color: #F39878;
+	border: 2px #EA6648 solid;
+	border-radius: 30px;
+	text-align: center;
+	line-height: 150px;
+	font-size: 22px;
+
+	font-family: Inter; 
+	font-size: 25px;
+	font-weight: normal;
+	color: #482921;
+
+	margin-bottom: 15rem;
+}
+
+
+.ok {
+	background-color: #9DE981;
+	border: 2px solid #7EC87C;
+	color: #3F6B3E;
+	text-align: center; 
+	height: 5rem;
+	width: 5rem;
+	border-radius: 100px; 
+   
+	display: flex; 
+	justify-content: center; 
+	align-items: center;  
+	
+	text-decoration: none !important;
+}
+
+#btn:hover{
+	background-color: #3F6B3E;
+	color: #9DE981;
+	border:2px #7EC87C  ;
+}
+
+.coilrobot {
+	height: 40rem;
+	width: auto;
+}
+
+.timer-box {
+margin-top: 2rem;
+margin-left: 2rem;
+}
+
+.all-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.next-btn {
+	display: flex;
+	gap: 2rem;
+	margin-left: 3rem;
+}
+
 		.btn-true{
 			height: 50px;
 			width: 50px;
 			background-color: #9DE981;
 			border-radius: 100px;
 			border:2px #7EC87C solid ;
-			float: left;
 			line-height: 50px;
 			text-align: center;
-			margin: 250px 10px;
-			margin-left:-190px;
 
 		}
 		.btn-true:hover{
@@ -56,11 +101,9 @@
 			background-color: #E98181;
 			border-radius: 100px;
 			border:2px #C33333 solid ;
-			float: left;
+			
 			line-height: 50px;
 			text-align: center;
-			margin: 250px 10px;
-			margin-left: -120px;
 
 		}
 		.btn-false:hover{
@@ -74,11 +117,9 @@
 			background-color: #E2C1B6;
 			border-radius: 100px;
 			border:2px #D6A89E solid ;
-			float: left;
 			line-height: 50px;
 			text-align: center;
-			margin: 250px 10px;
-			margin-left: -50px;
+			
 
 		}
 		.btn-skip:hover{
@@ -100,4 +141,4 @@
 			  font-family: "Rubik Mono One", monospace;
   			  font-weight: 400;
   			  font-size: 20px;
-		}
+		} */

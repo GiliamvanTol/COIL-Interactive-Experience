@@ -40,13 +40,11 @@
             height: 5rem;
             width: 5rem;
             border-radius: 100px; 
-           
             display: flex; 
             justify-content: center; 
             align-items: center;  
-            
-            text-decoration: none !important;
         }
+        a { text-decoration: none; }
 
 		#btn:hover{
 			background-color: #3F6B3E;

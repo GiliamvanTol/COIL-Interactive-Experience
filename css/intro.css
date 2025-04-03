@@ -58,3 +58,13 @@
             height: 40rem;
             width: auto;
         }
+
+        .distort {
+            animation: distortcoil 1.1s linear;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes distortcoil {
+        0%, 100% {transform: scale(1, 1);}
+        50% {transform: scale(0.95, 1.1);}
+    }

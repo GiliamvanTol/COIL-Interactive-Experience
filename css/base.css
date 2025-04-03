@@ -60,6 +60,8 @@ body{
 .coilrobot {
 	height: 40rem;
 	width: auto;
+	animation: distortcoil 1.1s linear;
+	animation-iteration-count: infinite;
 }
 
 .timer-box {
@@ -107,9 +109,9 @@ margin-left: 2rem;
 
 		}
 		.btn-false:hover{
-			background-color: #3F6B3E;
+			background-color: #C33333;
 			color: white;
-			border:2px solid #9DE981 ;
+			border:2px solid #E98181 ;
 		}
 	.btn-skip{
 			height: 50px;
@@ -127,8 +129,24 @@ margin-left: 2rem;
 			color: white;
 			border:2px solid #E2C1B6 ;
 		}
+
+		.btn-home{
+			height: 50px;
+			width: 50px;
+			background-color: #0077ff;
+			border-radius: 100px;
+			border:2px #00e1ffd8 solid ;
+			line-height: 50px;
+			text-align: center;
+		}
+
+		.btn-home:hover{
+			background-color: #00e1ffd8;
+			border:2px #0077ff solid ;
+		}
+
 		#next{
-			
+			color: inherit;
 		}
 
 		#countdown{
@@ -142,3 +160,12 @@ margin-left: 2rem;
   			  font-weight: 400;
   			  font-size: 20px;
 		} */
+
+		.distort {
+			color: inherit;
+		}
+		
+		@keyframes distortcoil {
+			0%, 100% {transform: scale(1, 1);}
+			50% {transform: scale(0.95, 1.1);}
+		}

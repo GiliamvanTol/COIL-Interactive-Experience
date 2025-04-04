@@ -6,10 +6,11 @@ old.addEventListener("click", () => {
 });
 
 .distort {
-    animation: distortcar 0.75s linear;
+    animation: distortcoil 0.75s linear;
+    animation-iteration-count: infinite;
 }
 
-@keyframes distortcar {
-    0%, 50%, 100% {transform: scale(1, 1);}
-    25%, 75% {transform: scale(0.8, 1.5);}
+@keyframes distortcoil {
+    0% {transform: scale(1, 1);}
+    100% {transform: scale(0.92, 1.2);}
 }

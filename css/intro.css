@@ -1,68 +1,88 @@
 
 	
-		.container{
-			display: flex;
-            margin: 100px auto;
-            width: 800px;
-            height: 500px;
-		}
+.container{
+	display: flex;
+    margin: 100px auto;
+    width: 800px;
+    height: 500px;
+}
 
-        .text-boxes {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+.text-boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-		#display{
-			width: 300px;
-			height: 150px;
-			background-color: #F39878;
-			border: 2px #EA6648 solid;
-			border-radius: 30px;
-			text-align: center;
-			line-height: 150px;
-			font-size: 22px;
-
-            font-family: Inter; 
-            font-size: 25px;
-            font-weight: normal;
-            color: #482921;
-
-            margin-bottom: 15rem;
-		}
-
+#display{
+	width: 300px;
+	height: 150px;
+	background-color: #F39878;
+	border: 2px #EA6648 solid;
+	border-radius: 30px;
+	text-align: center;
+	line-height: 150px;
+	font-size: 22px;
+    font-family: Inter; 
+    font-size: 25px;
+    font-weight: normal;
+    color: #482921;
+    margin-bottom: 15rem;
+    position: relative;
+}
 	
-        .ok {
-            background-color: #9DE981;
-            border: 2px solid #7EC87C;
-            color: #3F6B3E;
-            text-align: center; 
-            height: 5rem;
-            width: 5rem;
-            border-radius: 100px; 
-            display: flex; 
-            justify-content: center; 
-            align-items: center;  
-        }
-        a { text-decoration: none; }
+.ok {
+    background-color: #9DE981;
+    border: 2px solid #7EC87C;
+    color: #3F6B3E;
+    text-align: center; 
+    height: 5rem;
+    width: 5rem;
+    border-radius: 100px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;  
+}
 
-		#btn:hover{
-			background-color: #3F6B3E;
-			color: #9DE981;
-			border:2px #7EC87C  ;
-		}
+a{
+    text-decoration: none;
+}
 
-        .coilrobot {
-            height: 40rem;
-            width: auto;
-        }
+#btn:hover{
+	background-color: #3F6B3E;
+	color: #9DE981;
+	border:2px #7EC87C  ;
+}
 
-        .distort {
-            animation: distortcoil 1.1s linear;
-            animation-iteration-count: infinite;
-        }
+.coilrobot {
+    height: 40rem;
+    width: auto;
+}
+
+.btn-speak{
+	height: 50px;
+	width: 50px;
+	background-color: #b6e1e4;
+	border-radius: 100px;
+	border:2px #727272 solid ;
+	font-size: 25px;
+	line-height: 50px;
+	text-align: center;
+    position: absolute;
+    right: -15px;
+    top: -15px;
+}
+.btn-speak:hover{
+	background-color: #727272;
+	color: white;
+	border:2px solid #b6e1e4 ;
+}
+
+.distort {
+    animation: distortcoil 1.1s linear;
+    animation-iteration-count: infinite;
+}
         
-        @keyframes distortcoil {
-        0%, 100% {transform: scale(1, 1);}
-        50% {transform: scale(0.95, 1.1);}
-    }
+@keyframes distortcoil {
+    0%, 100% {transform: scale(1, 1);}
+    50% {transform: scale(0.95, 1.1);}
+ }

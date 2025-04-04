@@ -9,6 +9,9 @@ body{
 	overflow-y: hidden;
 }
 
+.text-only{
+	position: relative;
+}
 
 .text-boxes {
 	display: flex;
@@ -23,14 +26,10 @@ body{
 	border: 2px #EA6648 solid;
 	border-radius: 30px;
 	text-align: center;
-	line-height: 150px;
-	font-size: 22px;
-
+	align-content: center;
 	font-family: Inter; 
 	font-size: 25px;
-	font-weight: normal;
 	color: #482921;
-
 	margin-bottom: 15rem;
 }
 
@@ -43,11 +42,9 @@ body{
 	height: 5rem;
 	width: 5rem;
 	border-radius: 100px; 
-   
 	display: flex; 
 	justify-content: center; 
 	align-items: center;  
-	
 	text-decoration: none !important;
 }
 
@@ -65,8 +62,8 @@ body{
 }
 
 .timer-box {
-margin-top: 2rem;
-margin-left: 2rem;
+	margin-top: 2rem;
+	margin-left: 2rem;
 }
 
 .all-content {
@@ -81,91 +78,113 @@ margin-left: 2rem;
 	margin-left: 3rem;
 }
 
-		.btn-true{
-			height: 50px;
-			width: 50px;
-			background-color: #9DE981;
-			border-radius: 100px;
-			border:2px #7EC87C solid ;
-			line-height: 50px;
-			text-align: center;
+.btn-true{
+	height: 50px;
+	width: 50px;
+	background-color: #9DE981;
+	border-radius: 100px;
+	border:2px #7EC87C solid ;
+	line-height: 50px;
+	text-align: center;
+	font-size: 25px;
+}
+.btn-true:hover{
+	background-color: #3F6B3E;
+	color: white;
+	border:2px solid #9DE981 ;
+}
 
-		}
-		.btn-true:hover{
-			background-color: #3F6B3E;
-			color: white;
-			border:2px solid #9DE981 ;
-		}
+.btn-false{
+	height: 50px;
+	width: 50px;
+	background-color: #E98181;
+	border-radius: 100px;
+	border:2px #C33333 solid ;
+	font-size: 25px;
+	line-height: 50px;
+	text-align: center;
 
-	.btn-false{
-			height: 50px;
-			width: 50px;
-			background-color: #E98181;
-			border-radius: 100px;
-			border:2px #C33333 solid ;
-			
-			line-height: 50px;
-			text-align: center;
+}
+.btn-false:hover{
+	background-color: #C33333;
+	color: white;
+	border:2px solid #E98181 ;
+}
 
-		}
-		.btn-false:hover{
-			background-color: #C33333;
-			color: white;
-			border:2px solid #E98181 ;
-		}
-	.btn-skip{
-			height: 50px;
-			width: 50px;
-			background-color: #E2C1B6;
-			border-radius: 100px;
-			border:2px #D6A89E solid ;
-			line-height: 50px;
-			text-align: center;
-			
+.btn-skip{
+	height: 50px;
+	width: 50px;
+	background-color: #E2C1B6;
+	border-radius: 100px;
+	border:2px #D6A89E solid ;
+	line-height: 50px;
+	text-align: center;
+	font-size: 25px;
+}
 
-		}
-		.btn-skip:hover{
-			background-color: #D6A89E;
-			color: white;
-			border:2px solid #E2C1B6 ;
-		}
+.btn-skip:hover{
+	background-color: #D6A89E;
+	color: white;
+	border:2px solid #E2C1B6 ;
+}
+	
+.btn-home{
+	height: 50px;
+	width: 50px;
+	background-color: #0077ff;
+	border-radius: 100px;
+	border:2px #00e1ffd8 solid ;
+	line-height: 50px;
+	text-align: center;
+	font-size: 25px;
+}
+	
+.btn-home:hover{
+	background-color: #00e1ffd8;
+	border:2px #0077ff solid ;
+}
+.btn-speak{
+	height: 50px;
+	width: 50px;
+	background-color: #b6e1e4;
+	border-radius: 100px;
+	border:2px #727272 solid ;
+	font-size: 25px;
+	line-height: 50px;
+	text-align: center;
+    position: absolute;
+    right: 25px;
+    top: -10px;
+}
+.btn-speak:hover{
+	background-color: #727272;
+	color: white;
+	border:2px solid #b6e1e4 ;
+}
+	
+#next{
+	color: inherit;
+}
+	
+#countdown{
+	font-family: "Rubik Mono One", monospace;
+	font-weight: 400;
+	color: #C33333;
+	font-size: 20px;
+}
 
-		.btn-home{
-			height: 50px;
-			width: 50px;
-			background-color: #0077ff;
-			border-radius: 100px;
-			border:2px #00e1ffd8 solid ;
-			line-height: 50px;
-			text-align: center;
-		}
-
-		.btn-home:hover{
-			background-color: #00e1ffd8;
-			border:2px #0077ff solid ;
-		}
-
-		#next{
-			color: inherit;
-		}
-
-		#countdown{
-			  font-family: "Rubik Mono One", monospace;
- 			  font-weight: 400;
- 			  color: #C33333;
- 			  font-size: 20px;
-		}
-		#clickCount{
-			  font-family: "Rubik Mono One", monospace;
-  			  font-weight: 400;
-  			  font-size: 20px;
-		} */
-
-		.distort {
-			color: inherit;
-		}
-		
-		@keyframes distortcoil {
-			0%, 100% {transform: scale(1, 1);}
-			50% {transform: scale(0.95, 1.1);}
-		}
+#clickCount{
+	font-family: "Rubik Mono One", monospace;
+	font-weight: 400;
+	font-size: 20px;
+}
+	
+.distort {
+	color: inherit;
+}
+	
+@keyframes distortcoil {
+	0%, 100% {transform: scale(1, 1);}
+	50% {transform: scale(0.95, 1.1);}
+}
+	

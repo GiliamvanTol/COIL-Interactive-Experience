@@ -11,6 +11,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 #display{
@@ -70,6 +71,7 @@ a{
     position: absolute;
     right: -15px;
     top: -15px;
+    z-index: 10;
 }
 .btn-speak:hover{
 	background-color: #727272;

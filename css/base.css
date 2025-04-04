@@ -79,7 +79,6 @@ body{
 .next-btn {
 	display: flex;
 	gap: 2rem;
-	margin-left: 3rem;
 }
 
 .btn-true{
@@ -91,6 +90,7 @@ body{
 	line-height: 50px;
 	text-align: center;
 	font-size: 25px;
+	color: #482921;
 }
 .btn-true:hover{
 	background-color: #3F6B3E;
@@ -107,7 +107,7 @@ body{
 	font-size: 25px;
 	line-height: 50px;
 	text-align: center;
-
+	color: #482921;
 }
 .btn-false:hover{
 	background-color: #C33333;
@@ -124,6 +124,7 @@ body{
 	line-height: 50px;
 	text-align: center;
 	font-size: 25px;
+	color: #482921;
 }
 
 .btn-skip:hover{
@@ -131,40 +132,60 @@ body{
 	color: white;
 	border:2px solid #E2C1B6 ;
 }
+
+.btn-amount-of-skip {
+	height: 30px;
+	width: 30px;
+	background-color: #E2C1B6;
+	border-radius: 100px;
+	border:2px #D6A89E solid ;
+	text-align: center;
+	font-size: 20px;
+	color: #482921;
+	position: absolute;
+    right: 75px;
+    top: 380px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 	
 .btn-home{
 	height: 50px;
 	width: 50px;
-	background-color: #00e1ffd8;
+	background-color: #b6e1e4;
 	border-radius: 100px;
-	border:2px #0077ff solid ;
+	border:2px #86bbbf solid ;
 	line-height: 50px;
 	text-align: center;
 	font-size: 25px;
+	color: #482921;
 }
 	
 .btn-home:hover{
-	background-color: #0077ff;
+	background-color: #86bbbf;
 	color: white;
-	border:2px #00e1ffd8 solid ;
+	border:2px #b6e1e4 solid ;
 }
 .btn-speak{
 	height: 50px;
 	width: 50px;
-	background-color: #b6e1e4;
+	background-color: #E2C1B6;
 	border-radius: 100px;
-	border:2px #727272 solid ;
+	border:2px #D6A89E solid ;
 	font-size: 25px;
 	line-height: 50px;
 	text-align: center;
     position: absolute;
-    right: 25px;
+    right: -15px;
     top: -10px;
+	color: #482921;
 }
 .btn-speak:hover{
-	background-color: #727272;
+	background-color: #D6A89E;
 	color: white;
-	border:2px solid #b6e1e4 ;
+	border:2px solid #E2C1B6 ;
 }
 	
 #next{

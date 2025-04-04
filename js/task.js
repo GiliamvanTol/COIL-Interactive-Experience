@@ -1,7 +1,11 @@
-   const items = [                 
+   const items = [  
+    { text: 'Do a jigsaw puzzle', image: 'puzzle.png' },
+    { text: 'Do a jigsaw puzzle', image: '#' },
+
                   'Find a hat in the room.',
                   'Find sunglasses in the room.',
-                  'Get together and make a wave with your arms. Koekje, Voetbal, Klokke. Dagbog',
+                  'Get together and make a wave with your arms.',
+                  'Guess the definition of foreign words in English. Koekje, Voetbal, Klokke. Dagbog',
                   'Walk in a circle like a crab.',
                   'Pretend you are diving.',
                   'Draw the image you see on the screen .',

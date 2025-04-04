@@ -7,27 +7,27 @@
     height: 500px;
 }
 
-        .text-boxes {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+.text-boxes {
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 #display{
-	width: 300px;
-	height: 150px;
+	width: 650px;
+	height: 600px;
 	background-color: #F39878;
 	border: 2px #EA6648 solid;
 	border-radius: 30px;
 	text-align: center;
-	line-height: 150px;
 	font-size: 22px;
     font-family: Inter; 
     font-size: 25px;
     font-weight: normal;
     color: #482921;
-    margin-bottom: 15rem;
+    margin-bottom: 5rem;
     position: relative;
+    padding: 10px;
 }
 	
 .ok {
@@ -53,8 +53,12 @@ a{
 	border:2px #7EC87C  ;
 }
 
+figure {
+    margin-left: -100px;
+}
+
 .coilrobot {
-    height: 40rem;
+    height: 35rem;
     width: auto;
 }
 
@@ -69,8 +73,8 @@ a{
 	line-height: 50px;
 	text-align: center;
     position: absolute;
-    right: 245px;
-    top: 80px;
+    right: 60px;
+    top: 75px;
     z-index: 10;
 }
 .btn-speak:hover{

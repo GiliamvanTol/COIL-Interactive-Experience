@@ -1,5 +1,5 @@
    const items = [  
-    { text: 'Do a jigsaw puzzle', image: 'puzzle.png' },
+    { text: 'Do a jigsaw puzzle', image: '../img/maze-challenge.png' },
     { text: 'Do a jigsaw puzzle', image: '#' },
 
                   'Find a hat in the room.',

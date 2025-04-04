@@ -72,7 +72,10 @@ updateCountdown();
 // Function to show the next item and update the click counter
 function showNextItemPlus() {
   currentIndex++; // Increment the index to show the next item
-  document.getElementById("display").innerText = items[currentIndex];
+  document.getElementById("display").innerHTML = `
+    <p>${items[currentIndex].text}</p>
+    <img src="${items[currentIndex].image}" alt="Task image" style="max-width: 200px; display: block; margin-top: 10px;">
+    `;
 
   completedAssignments++; // Increment the click counter
   document.getElementById("clickCount").innerText =
@@ -83,7 +86,10 @@ function showNextItemPlus() {
 
 function showNextItemMin() {
   currentIndex++; // Increment the index to show the next item
-  document.getElementById("display").innerText = items[currentIndex];
+  document.getElementById("display").innerHTML = `
+    <p>${items[currentIndex].text}</p>
+    <img src="${items[currentIndex].image}" alt="Task image" style="max-width: 200px; display: block; margin-top: 10px;">
+    `;
 
   failedAssignments++; // Increment the click counter
   document.getElementById("clickCount").innerText = completedAssignments - failedAssignments;
@@ -107,7 +113,10 @@ function showNextItemSkip() {
   ShowAmountOfSkipsLeft();
 
   currentIndex++; // Increment the index to show the next item
-  document.getElementById("display").innerText = items[currentIndex];
+  document.getElementById("display").innerHTML = `
+    <p>${items[currentIndex].text}</p>
+    <img src="${items[currentIndex].image}" alt="Task image" style="max-width: 200px; display: block; margin-top: 10px;">
+    `;
 
   checkGameState();
 }
@@ -115,7 +124,10 @@ function showNextItemSkip() {
 ShowAmountOfSkipsLeft();
 
 // Show the first item initially
-document.getElementById("display").innerText = items[currentIndex];
+document.getElementById("display").innerHTML = `
+    <p>${items[currentIndex].text}</p>
+    <img src="${items[currentIndex].image}" alt="Task image" style="max-width: 200px; display: block; margin-top: 10px;">
+    `;
 // Add event listener to the button to show the next item and update the click counter when clicked
 document
   .getElementById("nextButtonPlus")

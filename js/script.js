@@ -69,7 +69,17 @@ function showNextItemMin() {
   }
 }
 
+let amountSkipped = 0;
+
 function showNextItemSkip() {
+    if (amountSkipped > 2) {
+      return;
+    }
+
+    amountSkipped++;
+
+    ShowAmountOfSkipsLeft();
+
     if (currentIndex < items.length - 1) {
       currentIndex++; // Increment the index to show the next item
       document.getElementById('display').innerText = items[currentIndex];
@@ -83,6 +93,12 @@ function showNextItemSkip() {
         document.getElementById('nextButtonSkip').disabled = true; // Disable the button when reaching the last item
   }   
   }
+}
+
+ShowAmountOfSkipsLeft();
+
+function ShowAmountOfSkipsLeft() {
+  document.getElementById('skipButtonCount').innerText = 3 - amountSkipped;
 }
 
 // Show the first item initially

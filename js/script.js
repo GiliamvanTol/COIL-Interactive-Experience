@@ -27,6 +27,27 @@ function updateCountdown() {
   }
 }
 
+function shuffle(array) {
+  let currentIndex = array.length, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (currentIndex !== 0) {
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex], array[currentIndex]
+    ];
+  }
+
+  return array;
+}
+
+shuffle(items);
+console.log(items)
+
 let currentIndex = 0;
 let completedAssignments = 0;
 let failedAssignments = 0;
@@ -74,7 +95,7 @@ function showNextItemPlus() {
   currentIndex++; // Increment the index to show the next item
   document.getElementById("display").innerHTML = `
     <p>${items[currentIndex].text}</p>
-    <img src="${items[currentIndex].image}" alt="Task image" style="max-width: 200px; display: block; margin-top: 10px;">
+    <img src="${items[currentIndex].image}" style="max-width: 200px; display: block; margin-top: 10px; position: absolute; top: 0px; right: -250px;">
     `;
 
   completedAssignments++; // Increment the click counter
@@ -88,7 +109,7 @@ function showNextItemMin() {
   currentIndex++; // Increment the index to show the next item
   document.getElementById("display").innerHTML = `
     <p>${items[currentIndex].text}</p>
-    <img src="${items[currentIndex].image}" alt="Task image" style="max-width: 200px; display: block; margin-top: 10px;">
+    <img src="${items[currentIndex].image}" style="max-width: 200px; display: block; margin-top: 10px; position: absolute; top: 0px; right: -250px;">
     `;
 
   failedAssignments++; // Increment the click counter
@@ -115,7 +136,7 @@ function showNextItemSkip() {
   currentIndex++; // Increment the index to show the next item
   document.getElementById("display").innerHTML = `
     <p>${items[currentIndex].text}</p>
-    <img src="${items[currentIndex].image}" alt="Task image" style="max-width: 200px; display: block; margin-top: 10px;">
+    <img src="${items[currentIndex].image}" style="max-width: 200px; display: block; margin-top: 10px; position: absolute; top: 0px; right: -250px;">
     `;
 
   checkGameState();
@@ -126,7 +147,7 @@ ShowAmountOfSkipsLeft();
 // Show the first item initially
 document.getElementById("display").innerHTML = `
     <p>${items[currentIndex].text}</p>
-    <img src="${items[currentIndex].image}" alt="Task image" style="max-width: 200px; display: block; margin-top: 10px;">
+    <img src="${items[currentIndex].image}" style="max-width: 200px; display: block; margin-top: 10px; position: absolute; top: 0px; right: -250px;">
     `;
 // Add event listener to the button to show the next item and update the click counter when clicked
 document

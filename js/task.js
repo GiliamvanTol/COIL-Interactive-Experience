@@ -17,7 +17,7 @@
     { text: 'Do a Robot dance and name the move.', image: '' },
     { text: 'Balance an object on your head and walk across the room.', image: '' },
     { text: 'Name 3 things that rhyme with duck.', image: '' },
-    { text: 'Find the word in the scrambled letters. The first and last letters are correct! MREAROOTHBD, CPEMOTUR, MTONOIR', image: '#' },
+    { text: 'Find the word in the scrambled letters. The first and last letters are correct! MREAROOTHBD, CPEMOTUR, MTONOIR', image: '' },
     { text: 'Make a paper airplane and fly it.', image: '' },
     { text: 'Write all players name with your non-dominant hand.', image: '' },
     { text: 'Say “How much wood would a woodchuck chuck if a woodchuck could chuck wood” 3 times.', image: '' },
